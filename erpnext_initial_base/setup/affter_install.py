@@ -1,0 +1,29 @@
+import frappe
+
+def after_install():
+    """Run before migration"""
+    # Remove all role profiles
+    remove_all_role_profiles()
+    # disabled all roles except specified ones
+    update_role_status()
+
+
+def remove_all_role_profiles():
+    """Remove all role profiles except specified ones."""
+    names_to_remove = ["Accounts", "HR", "Inventory", "Manufacturing", "Purchase", "Sales"]
+    frappe.db.delete("Role Profile", {"name": ["in", names_to_remove]})
+
+
+def update_role_status():
+    """Disable all roles except specified ones, but only if currently enabled."""
+    excluded_roles = ["Administrator", "All", "Guest", "Desk User"]
+    frappe.db.set_value(
+        "Role",
+        {
+            "name": ["not in", excluded_roles],
+            "disabled": 0  # Only update roles that are currently enabled
+        },
+        "disabled",
+        1,
+        update_modified=False
+    )

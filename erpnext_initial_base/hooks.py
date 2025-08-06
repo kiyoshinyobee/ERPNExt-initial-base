@@ -8,7 +8,7 @@ app_license = "mit"
 # Apps
 # ------------------
 
-# required_apps = []
+required_apps = ["erpnext", "hrms"]
 
 # Each item in the list will be shown as an app in the apps page
 # add_to_apps_screen = [
@@ -82,8 +82,8 @@ app_license = "mit"
 # Installation
 # ------------
 
-# before_install = "erpnext_initial_base.install.before_install"
-# after_install = "erpnext_initial_base.install.after_install"
+before_install = "erpnext_initial_base.setup.before_install.before_install"
+after_install = "erpnext_initial_base.setup.affter_install.after_install"
 
 # Uninstallation
 # ------------
