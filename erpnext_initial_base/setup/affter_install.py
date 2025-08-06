@@ -16,12 +16,12 @@ def remove_all_role_profiles():
 
 def update_role_status():
     """Disable all roles except specified ones, but only if currently enabled."""
-    excluded_roles = ["Administrator", "All", "Guest", "Desk User"]
+    excluded_roles = ["Administrator", "All", "Guest", "Desk User", "System Manager", "Script Manager"]
     frappe.db.set_value(
         "Role",
         {
             "name": ["not in", excluded_roles],
-            "disabled": 0  # Only update roles that are currently enabled
+            "disabled": 0
         },
         "disabled",
         1,
