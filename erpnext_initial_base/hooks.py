@@ -242,3 +242,39 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+
+# Before Migrate
+# --------------------------------
+# before_migrate = "erpnext_initial_base.setup.before_migrate.before_migrate"
+
+
+# Fixtures
+# --------------------------------
+fixtures = [
+    {
+        "dt": "Role",
+        "filters": [
+            ["is_custom", "=", 1],
+            ["name", "in", [
+                "HR-Staffing Plan (Viewer)", "HR-Staffing Plan (Creator)", "HR-Staffing Plan (Editor)", "HR-Staffing Plan (Approver)", "HR-Staffing Plan (Amender)",
+            ]],
+        ],
+    }, {
+        "dt": "Role Profile",
+        "filters": [
+            ["name", "in", [
+                "CEO / Owner",
+                "Department Head",
+                "HR Manager",
+                "HR Staff",
+            ]]
+        ],
+    }, {
+        "dt": "Custom DocPerm",
+        "filters": [
+            ["role", "in", [
+                "HR-Staffing Plan (Viewer)", "HR-Staffing Plan (Creator)", "HR-Staffing Plan (Editor)", "HR-Staffing Plan (Approver)", "HR-Staffing Plan (Amender)",
+            ]]
+        ],
+    }
+]

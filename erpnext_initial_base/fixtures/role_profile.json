@@ -1,0 +1,80 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2025-08-06 11:06:11.234248",
+  "name": "CEO / Owner",
+  "role_profile": "CEO / Owner",
+  "roles": [
+   {
+    "parent": "CEO / Owner",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "HR-Staffing Plan (Viewer)"
+   },
+   {
+    "parent": "CEO / Owner",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "HR-Staffing Plan (Amender)"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2025-08-06 11:06:45.499497",
+  "name": "HR Manager",
+  "role_profile": "HR Manager",
+  "roles": [
+   {
+    "parent": "HR Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "HR-Staffing Plan (Creator)"
+   },
+   {
+    "parent": "HR Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "HR-Staffing Plan (Editor)"
+   },
+   {
+    "parent": "HR Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "HR-Staffing Plan (Approver)"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2025-08-06 11:07:34.420341",
+  "name": "Department Head",
+  "role_profile": "Department Head",
+  "roles": [
+   {
+    "parent": "Department Head",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "HR-Staffing Plan (Viewer)"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2025-08-06 11:07:55.478816",
+  "name": "HR Staff",
+  "role_profile": "HR Staff",
+  "roles": [
+   {
+    "parent": "HR Staff",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "HR-Staffing Plan (Creator)"
+   }
+  ]
+ }
+]

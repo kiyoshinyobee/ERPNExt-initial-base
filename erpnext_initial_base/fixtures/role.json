@@ -1,0 +1,67 @@
+[
+ {
+  "desk_access": 1,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Role",
+  "home_page": null,
+  "is_custom": 1,
+  "modified": "2025-08-06 10:50:38.930071",
+  "name": "HR-Staffing Plan (Viewer)",
+  "restrict_to_domain": null,
+  "role_name": "HR-Staffing Plan (Viewer)",
+  "two_factor_auth": 0
+ },
+ {
+  "desk_access": 1,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Role",
+  "home_page": null,
+  "is_custom": 1,
+  "modified": "2025-08-06 10:50:58.142098",
+  "name": "HR-Staffing Plan (Creator)",
+  "restrict_to_domain": null,
+  "role_name": "HR-Staffing Plan (Creator)",
+  "two_factor_auth": 0
+ },
+ {
+  "desk_access": 1,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Role",
+  "home_page": null,
+  "is_custom": 1,
+  "modified": "2025-08-06 10:51:11.984439",
+  "name": "HR-Staffing Plan (Editor)",
+  "restrict_to_domain": null,
+  "role_name": "HR-Staffing Plan (Editor)",
+  "two_factor_auth": 0
+ },
+ {
+  "desk_access": 1,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Role",
+  "home_page": null,
+  "is_custom": 1,
+  "modified": "2025-08-06 10:51:27.284230",
+  "name": "HR-Staffing Plan (Approver)",
+  "restrict_to_domain": null,
+  "role_name": "HR-Staffing Plan (Approver)",
+  "two_factor_auth": 0
+ },
+ {
+  "desk_access": 1,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Role",
+  "home_page": null,
+  "is_custom": 1,
+  "modified": "2025-08-06 10:51:44.785821",
+  "name": "HR-Staffing Plan (Amender)",
+  "restrict_to_domain": null,
+  "role_name": "HR-Staffing Plan (Amender)",
+  "two_factor_auth": 0
+ }
+]
