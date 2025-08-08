@@ -6,6 +6,8 @@ def after_install():
     remove_all_role_profiles()
     # disabled all roles except specified ones
     update_role_status()
+    # remove gender except male and female
+    update_gender_list()
 
 
 def remove_all_role_profiles():
@@ -27,3 +29,8 @@ def update_role_status():
         1,
         update_modified=False
     )
+
+
+def update_gender_list():
+    """Remove all records from Gender except 'Male' and 'Female'."""
+    frappe.db.delete("Gender", {"gender": ["not in", ["Male", "Female"]]})
