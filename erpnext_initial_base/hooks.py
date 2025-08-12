@@ -258,6 +258,7 @@ fixtures = [
             ["is_custom", "=", 1],
             ["name", "in", [
                 "HR-Staffing Plan (Viewer)", "HR-Staffing Plan (Creator)", "HR-Staffing Plan (Editor)", "HR-Staffing Plan (Approver)", "HR-Staffing Plan (Amender)",
+                "HR-Job Requisition (Viewer)", "HR-Job Requisition (Creator)", "HR-Job Requisition (Approver)",
             ]],
         ],
     }, {
@@ -275,6 +276,7 @@ fixtures = [
         "filters": [
             ["role", "in", [
                 "HR-Staffing Plan (Viewer)", "HR-Staffing Plan (Creator)", "HR-Staffing Plan (Editor)", "HR-Staffing Plan (Approver)", "HR-Staffing Plan (Amender)",
+                "HR-Job Requisition (Viewer)", "HR-Job Requisition (Creator)", "HR-Job Requisition (Approver)",
             ]]
         ],
     }

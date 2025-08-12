@@ -2,7 +2,7 @@
  {
   "docstatus": 0,
   "doctype": "Role Profile",
-  "modified": "2025-08-06 11:06:11.234248",
+  "modified": "2025-08-12 10:03:30.749147",
   "name": "CEO / Owner",
   "role_profile": "CEO / Owner",
   "roles": [
@@ -17,13 +17,25 @@
     "parentfield": "roles",
     "parenttype": "Role Profile",
     "role": "HR-Staffing Plan (Amender)"
+   },
+   {
+    "parent": "CEO / Owner",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "HR-Job Requisition (Approver)"
+   },
+   {
+    "parent": "CEO / Owner",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "HR-Job Requisition (Viewer)"
    }
   ]
  },
  {
   "docstatus": 0,
   "doctype": "Role Profile",
-  "modified": "2025-08-06 11:06:45.499497",
+  "modified": "2025-08-12 10:02:53.220978",
   "name": "HR Manager",
   "role_profile": "HR Manager",
   "roles": [
@@ -44,13 +56,25 @@
     "parentfield": "roles",
     "parenttype": "Role Profile",
     "role": "HR-Staffing Plan (Approver)"
+   },
+   {
+    "parent": "HR Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "HR-Job Requisition (Creator)"
+   },
+   {
+    "parent": "HR Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "HR-Job Requisition (Approver)"
    }
   ]
  },
  {
   "docstatus": 0,
   "doctype": "Role Profile",
-  "modified": "2025-08-06 11:07:34.420341",
+  "modified": "2025-08-12 10:00:54.676614",
   "name": "Department Head",
   "role_profile": "Department Head",
   "roles": [
@@ -59,13 +83,19 @@
     "parentfield": "roles",
     "parenttype": "Role Profile",
     "role": "HR-Staffing Plan (Viewer)"
+   },
+   {
+    "parent": "Department Head",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "HR-Job Requisition (Creator)"
    }
   ]
  },
  {
   "docstatus": 0,
   "doctype": "Role Profile",
-  "modified": "2025-08-06 11:07:55.478816",
+  "modified": "2025-08-12 10:01:12.000551",
   "name": "HR Staff",
   "role_profile": "HR Staff",
   "roles": [
@@ -74,6 +104,12 @@
     "parentfield": "roles",
     "parenttype": "Role Profile",
     "role": "HR-Staffing Plan (Creator)"
+   },
+   {
+    "parent": "HR Staff",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "HR-Job Requisition (Creator)"
    }
   ]
  }
