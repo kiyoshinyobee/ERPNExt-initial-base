@@ -252,7 +252,7 @@ after_install = "erpnext_initial_base.setup.affter_install.after_install"
 # Fixtures
 # --------------------------------
 fixtures = [
-    {
+    { # pre-defined custom role
         "dt": "Role",
         "filters": [
             ["is_custom", "=", 1],
@@ -261,17 +261,16 @@ fixtures = [
                 "HR-Job Requisition (Viewer)", "HR-Job Requisition (Creator)", "HR-Job Requisition (Approver)",
             ]],
         ],
-    }, {
+    },
+    { # pre-defined custom role profile
         "dt": "Role Profile",
         "filters": [
             ["name", "in", [
-                "CEO / Owner",
-                "Department Head",
-                "HR Manager",
-                "HR Staff",
+                "CEO / Owner", "Department Head", "HR Manager", "HR Staff",
             ]]
         ],
-    }, {
+    },
+    { # pre-defined custom role profile assignment
         "dt": "Custom DocPerm",
         "filters": [
             ["role", "in", [
@@ -279,5 +278,11 @@ fixtures = [
                 "HR-Job Requisition (Viewer)", "HR-Job Requisition (Creator)", "HR-Job Requisition (Approver)",
             ]]
         ],
-    }
+    },
+    { # override core doctype property
+        "dt": "Property Setter",
+        "filters": [
+            ["doc_type", "=", "Job Requisition"]
+        ]
+    },
 ]
