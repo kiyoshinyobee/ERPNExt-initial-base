@@ -1,0 +1,13 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Job Requisition",
+  "enabled": 1,
+  "modified": "2025-08-13 14:43:27.560736",
+  "module": "ERPNext Initial Base",
+  "name": "HR-Job Requisition",
+  "script": "frappe.ui.form.on('Job Requisition', {\n    onload(frm) {\n        // Set default value of requested_by field \n        // set when creating a new form only\n        if (frm.is_new() && !frm.doc.requested_by) {\n            frappe.call({\n                method: \"frappe.client.get_value\",\n                args: {\n                    doctype: \"Employee\",\n                    filters: { user_id: frappe.session.user },\n                    fieldname: [\"name\"]\n                },\n                callback: function(r) {\n                    if (r.message) {\n                        frm.set_value(\"requested_by\", r.message.name);\n                    }\n                }\n            });\n        }\n    },\n});",
+  "view": "Form"
+ }
+]
