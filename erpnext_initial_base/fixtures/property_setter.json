@@ -30,5 +30,37 @@
   "property_type": "Text",
   "row_name": null,
   "value": "0,00"
+ },
+ {
+  "default_value": null,
+  "doc_type": "Job Requisition",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "status",
+  "is_system_generated": 0,
+  "modified": "2025-08-13 11:27:57.376353",
+  "module": null,
+  "name": "Job Requisition-status-permlevel",
+  "property": "permlevel",
+  "property_type": "Int",
+  "row_name": null,
+  "value": "1"
+ },
+ {
+  "default_value": null,
+  "doc_type": "Job Requisition",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "requested_by",
+  "is_system_generated": 0,
+  "modified": "2025-08-13 11:27:57.430730",
+  "module": null,
+  "name": "Job Requisition-requested_by-permlevel",
+  "property": "permlevel",
+  "property_type": "Int",
+  "row_name": null,
+  "value": "1"
  }
 ]

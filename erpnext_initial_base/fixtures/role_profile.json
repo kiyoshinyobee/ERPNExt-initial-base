@@ -2,7 +2,7 @@
  {
   "docstatus": 0,
   "doctype": "Role Profile",
-  "modified": "2025-08-12 10:03:30.749147",
+  "modified": "2025-08-13 11:21:19.913949",
   "name": "CEO / Owner",
   "role_profile": "CEO / Owner",
   "roles": [
@@ -22,20 +22,26 @@
     "parent": "CEO / Owner",
     "parentfield": "roles",
     "parenttype": "Role Profile",
+    "role": "HR-Job Requisition (Viewer)"
+   },
+   {
+    "parent": "CEO / Owner",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
     "role": "HR-Job Requisition (Approver)"
    },
    {
     "parent": "CEO / Owner",
     "parentfield": "roles",
     "parenttype": "Role Profile",
-    "role": "HR-Job Requisition (Viewer)"
+    "role": "HR-Job Requisition (Lv1-Read Only)"
    }
   ]
  },
  {
   "docstatus": 0,
   "doctype": "Role Profile",
-  "modified": "2025-08-12 14:48:13.932052",
+  "modified": "2025-08-13 11:44:26.989308",
   "name": "HR Manager",
   "role_profile": "HR Manager",
   "roles": [
@@ -68,13 +74,25 @@
     "parentfield": "roles",
     "parenttype": "Role Profile",
     "role": "HR-Job Requisition (Creator)"
+   },
+   {
+    "parent": "HR Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "HR-Job Requisition (Lv1-Read Write)"
+   },
+   {
+    "parent": "HR Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "HR-Job Requisition (Editor)"
    }
   ]
  },
  {
   "docstatus": 0,
   "doctype": "Role Profile",
-  "modified": "2025-08-12 10:00:54.676614",
+  "modified": "2025-08-13 11:22:06.588886",
   "name": "Department Head",
   "role_profile": "Department Head",
   "roles": [
@@ -89,13 +107,19 @@
     "parentfield": "roles",
     "parenttype": "Role Profile",
     "role": "HR-Job Requisition (Creator)"
+   },
+   {
+    "parent": "Department Head",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "HR-Job Requisition (Lv1-Read Only)"
    }
   ]
  },
  {
   "docstatus": 0,
   "doctype": "Role Profile",
-  "modified": "2025-08-12 10:01:12.000551",
+  "modified": "2025-08-13 17:52:48.397436",
   "name": "HR Staff",
   "role_profile": "HR Staff",
   "roles": [
@@ -110,6 +134,12 @@
     "parentfield": "roles",
     "parenttype": "Role Profile",
     "role": "HR-Job Requisition (Creator)"
+   },
+   {
+    "parent": "HR Staff",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "HR-Job Requisition (Lv1-Read Write)"
    }
   ]
  }

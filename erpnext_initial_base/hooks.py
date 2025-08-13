@@ -138,13 +138,11 @@ after_install = "erpnext_initial_base.setup.affter_install.after_install"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+    "Job Requisition": {
+        "before_validate": "erpnext_initial_base.customizations.job_requisition_hooks.run_all_before_validate",
+    },
+}
 
 # Scheduled Tasks
 # ---------------
@@ -285,4 +283,11 @@ fixtures = [
             ["doc_type", "=", "Job Requisition"]
         ]
     },
+    { # pre-defined client script
+        "dt": "Client Script",
+        "filters": [
+            ["dt", "in", ["Job Requisition"]],
+            ["module", "=", "ERPNext Initial Base"],
+        ]
+    }
 ]
