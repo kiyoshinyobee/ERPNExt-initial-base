@@ -119,16 +119,10 @@
  {
   "docstatus": 0,
   "doctype": "Role Profile",
-  "modified": "2025-08-13 17:52:48.397436",
+  "modified": "2025-08-13 18:09:45.530996",
   "name": "HR Staff",
   "role_profile": "HR Staff",
   "roles": [
-   {
-    "parent": "HR Staff",
-    "parentfield": "roles",
-    "parenttype": "Role Profile",
-    "role": "HR-Staffing Plan (Creator)"
-   },
    {
     "parent": "HR Staff",
     "parentfield": "roles",
@@ -140,6 +134,12 @@
     "parentfield": "roles",
     "parenttype": "Role Profile",
     "role": "HR-Job Requisition (Lv1-Read Write)"
+   },
+   {
+    "parent": "HR Staff",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "HR-Staffing Plan (Creator)"
    }
   ]
  }
