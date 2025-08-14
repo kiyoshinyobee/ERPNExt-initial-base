@@ -144,7 +144,7 @@ after_install = "erpnext_initial_base.setup.affter_install.after_install"
 
 doc_events = {
     "Job Requisition": {
-        "before_validate": "erpnext_initial_base.customizations.job_requisition_events.run_all_before_validate",
+        "before_validate": "erpnext_initial_base.customizations.events.job_requisition.run_all_before_validate",
     },
 }
 
