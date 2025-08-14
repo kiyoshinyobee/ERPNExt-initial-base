@@ -140,7 +140,7 @@ after_install = "erpnext_initial_base.setup.affter_install.after_install"
 
 doc_events = {
     "Job Requisition": {
-        "before_validate": "erpnext_initial_base.customizations.job_requisition_hooks.run_all_before_validate",
+        "before_validate": "erpnext_initial_base.customizations.job_requisition_events.run_all_before_validate",
     },
 }
 
@@ -274,9 +274,10 @@ fixtures = [
         "dt": "Custom DocPerm",
         "filters": [
             ["role", "in", [
-                "HR-Staffing Plan (Viewer)", "HR-Staffing Plan (Creator)", "HR-Staffing Plan (Editor)", "HR-Staffing Plan (Approver)", \
-                    "HR-Staffing Plan (Amender)",
-                "HR-Job Requisition (Viewer)", "HR-Job Requisition (Creator)", "HR-Job Requisition (Approver)",
+                "HR-Staffing Plan (Viewer)", "HR-Staffing Plan (Creator)", "HR-Staffing Plan (Editor)", \
+                    "HR-Staffing Plan (Approver)", "HR-Staffing Plan (Amender)",
+                "HR-Job Requisition (Viewer)", "HR-Job Requisition (Creator)", "HR-Job Requisition (Approver)", "HR-Job Requisition (Editor)", \
+                    "HR-Job Requisition (Lv1-Read Only)", "HR-Job Requisition (Lv1-Read Write)"
             ]]
         ],
     },
