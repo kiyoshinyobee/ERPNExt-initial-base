@@ -5,6 +5,10 @@ app_description = "Apps for setup minimal configuration of ERPNext"
 app_email = "nyobeentanglaud@gmail.com"
 app_license = "mit"
 
+
+from .customizations.fixtures_list import fixtures_list\
+
+
 # Apps
 # ------------------
 
@@ -249,49 +253,4 @@ doc_events = {
 
 # Fixtures
 # --------------------------------
-fixtures = [
-    { # pre-defined custom role
-        "dt": "Role",
-        "filters": [
-            ["is_custom", "=", 1],
-            ["name", "in", [
-                "HR-Staffing Plan (Viewer)", "HR-Staffing Plan (Creator)", "HR-Staffing Plan (Editor)", \
-                    "HR-Staffing Plan (Approver)", "HR-Staffing Plan (Amender)",
-                "HR-Job Requisition (Viewer)", "HR-Job Requisition (Creator)", "HR-Job Requisition (Approver)", "HR-Job Requisition (Editor)", \
-                    "HR-Job Requisition (Lv1-Read Only)", "HR-Job Requisition (Lv1-Read Write)"
-            ]],
-        ],
-    },
-    { # pre-defined custom role profile
-        "dt": "Role Profile",
-        "filters": [
-            ["name", "in", [
-                "CEO / Owner", "Department Head", "HR Manager", "HR Staff",
-            ]]
-        ],
-    },
-    { # pre-defined custom role profile assignment
-        "dt": "Custom DocPerm",
-        "filters": [
-            ["role", "in", [
-                "HR-Staffing Plan (Viewer)", "HR-Staffing Plan (Creator)", "HR-Staffing Plan (Editor)", \
-                    "HR-Staffing Plan (Approver)", "HR-Staffing Plan (Amender)",
-                "HR-Job Requisition (Viewer)", "HR-Job Requisition (Creator)", "HR-Job Requisition (Approver)", "HR-Job Requisition (Editor)", \
-                    "HR-Job Requisition (Lv1-Read Only)", "HR-Job Requisition (Lv1-Read Write)"
-            ]]
-        ],
-    },
-    { # override core doctype property
-        "dt": "Property Setter",
-        "filters": [
-            ["doc_type", "=", "Job Requisition"]
-        ]
-    },
-    { # pre-defined client script
-        "dt": "Client Script",
-        "filters": [
-            ["dt", "in", ["Job Requisition"]],
-            ["module", "=", "ERPNext Initial Base"],
-        ]
-    }
-]
+fixtures = fixtures_list
