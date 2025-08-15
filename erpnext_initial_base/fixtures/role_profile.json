@@ -119,7 +119,7 @@
  {
   "docstatus": 0,
   "doctype": "Role Profile",
-  "modified": "2025-08-13 18:09:45.530996",
+  "modified": "2025-08-15 14:11:12.454225",
   "name": "HR Staff",
   "role_profile": "HR Staff",
   "roles": [
@@ -140,6 +140,12 @@
     "parentfield": "roles",
     "parenttype": "Role Profile",
     "role": "HR-Staffing Plan (Creator)"
+   },
+   {
+    "parent": "HR Staff",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "HR-Job Opening (creator)"
    }
   ]
  }
