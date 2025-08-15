@@ -14,6 +14,14 @@ pre_defined_roles = [
     "HR-Job Requisition (Editor)",
     "HR-Job Requisition (Lv1-Read Only)",
     "HR-Job Requisition (Lv1-Read Write)",
+
+    # job opening
+    "HR-Job Opening (viewer)",
+    "HR-Job Opening (creator)",
+
+    # job applicant
+    "HR-Job Applicant (Viewer)",
+    "HR-Job Applicant (Creator)",
 ]
 
 role_fixtures = [

@@ -142,11 +142,11 @@ after_install = "erpnext_initial_base.setup.affter_install.after_install"
 # ---------------
 # Hook on document methods and events
 
-doc_events = {
-    "Job Requisition": {
-        "before_validate": "erpnext_initial_base.customizations.events.job_requisition.run_all_before_validate",
-    },
-}
+# doc_events = {
+#     "Job Requisition": {
+#         "before_validate": "erpnext_initial_base.customizations.events.job_requisition.run_all_before_validate",
+#     },
+# }
 
 # Scheduled Tasks
 # ---------------
