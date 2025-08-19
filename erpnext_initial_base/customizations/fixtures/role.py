@@ -22,6 +22,12 @@ pre_defined_roles = [
     # job applicant
     "HR-Job Applicant (Viewer)",
     "HR-Job Applicant (Creator)",
+
+    # job offer
+
+    # employee referral
+    "HR-Employee Referral (Viewer)",
+    "HR-Employee Referral (Creator)",
 ]
 
 role_fixtures = [
