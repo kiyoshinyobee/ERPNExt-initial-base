@@ -22,7 +22,7 @@ def run_all_before_validate(doc, method):
     """ Run all hooks before validate """
     hooks = [
         set_requested_by,
-        # id any more before validate methods here
+        # add more before validate methods here
     ]
     for hook in hooks:
         hook(doc, method)
