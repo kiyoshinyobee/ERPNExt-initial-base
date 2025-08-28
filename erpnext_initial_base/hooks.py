@@ -253,4 +253,4 @@ after_install = "erpnext_initial_base.setup.affter_install.after_install"
 
 # Fixtures
 # --------------------------------
-fixtures = fixtures_list
+# fixtures = fixtures_list
